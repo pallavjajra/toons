@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Our Work</title>
+    <style>
+        .top-box {
+            position: relative;
+            display: inline-block;
+        }
+
+        .top-box .mini {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .top-box {
+            position: absolute;
+            display: inline-block;
+            top: 50%;
+            left: 50%;
+            z-index: 2;
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes myMove {
+            0% {
+                transform: scale(1);
+            }
+
+            10% {
+                transform: scale(1.2);
+            }
+
+            20% {
+                transform: scale(1);
+            }
+
+            30% {
+                transform: scale(1.2);
+            }
+
+            40% {
+                transform: scale(.9);
+            }
+
+            50% {
+                transform: scale(1);
+            }
+
+            60% {
+                transform: scale(1.2);
+            }
+
+            70% {
+                transform: scale(.8);
+            }
+
+            80% {
+                transform: scale(1);
+            }
+
+            90% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .top-box:hover .mini img {
+            animation-name: myMove;
+            animation-iteration-count: infinite;
+            animation-duration: 3000ms;
+            animation-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a class="logo-icon-head" href="#"><img src="assets/images/toon_logo.png" alt="Logo"></a>
+            </div>
+            <div class="overlay" id="overlay">
+                <nav class="overlay-menu">
+                    <ul>
+                        <div id="overlay-cross">
+
+                        </div>
+                        <li class="logo-menu"><a href=""><img src="assets/images/toon_logo.png" alt=""></a>
+                            <div class="connn">
+                                <div class="connn-top"></div>
+                                <div class="connn-bottom"></div>
+                            </div>
+                        </li>
+                        <li class="nav-items"><a class="nav-link" href="">Our Services</a></li>
+                        <li class="nav-items"><a class="nav-link" href="">Our Work</a></li>
+                        <li class="nav-items"><a class="nav-link" href="">Our Process</a></li>
+                        <li class="nav-items"><a class="nav-link" href="">Toon Blog</a></li>
+                        <li class="nav-items"><a class="nav-link" href="">Our Team</a></li>
+                        <li class="nav-items"><a class="nav-link" href="">Meet Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="button_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+
+        </div>
+    </header>
+    <section class="our-work-banner"></section>
+
+    <section class="our-work-tab-section">
+        <div class="container">
+            <div class="our-tabs">
+                <ul id="our-work-slide" class="owl-carousel owl-theme">
+                    <li class="our-tab-list active" data-filter="all">All</li>
+                    <li class="our-tab-list" data-filter="brand-animation">Brand Animation</li>
+                    <li class="our-tab-list" data-filter="process-animation">Process Animation</li>
+                    <li class="our-tab-list" data-filter="explainer-animation">Explainer Animation</li>
+                    <li class="our-tab-list" data-filter="character-animation">Character Animation</li>
+                    <li class="our-tab-list" data-filter="social-media-animation">Social Media Animation
+                    </li>
+                    <li class="our-tab-list" data-filter="infographic-animation">Infographic Animation</li>
+                </ul>
+            </div>
+            <div class="our-work-items">
+                <div class="our-item-box video-btn" data-toggle="modal"
+                    data-src="https://player.vimeo.com/video/517294790?h=da863dae0d" data-target="#myModal">
+                    <div class="gr-op"></div>
+                    <div class="gradie"></div>
+                    <div class="img-box">
+                        <img src="assets/images/our-work-img/img-01.png" alt="">
+                    </div>
+                    <div class="top-box">
+                        <div class="play-btn">
+                            
+                            <img src="assets/images/our-work-img/back-whi.png" alt="">
+                        </div>
+                        <div class="mini">
+                            <img src="assets/images/our-work-img/white-icon (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="our-item-box video-btn" data-toggle="modal"
+                    data-src="https://player.vimeo.com/video/493370943?h=3f98cb151a" data-target="#myModal">
+                    <div class="gr-op"></div>
+                    <div class="gradie"></div>
+                    <div class="img-box">
+                        <img src="assets/images/our-work-img/img-02.png" alt="">
+                    </div>
+                    <div class="top-box">
+                        <div class="play-btn">
+
+                            <img src="assets/images/our-work-img/back-whi.png" alt="">
+                        </div>
+                        <div class="mini">
+                            <img src="assets/images/our-work-img/white-icon (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="our-item-box video-btn" data-toggle="modal"
+                    data-src="https://player.vimeo.com/video/58385453?badge=0" data-target="#myModal">
+                    <div class="gr-op"></div>
+                    <div class="gradie"></div>
+                    <div class="img-box">
+                        <img src="assets/images/our-work-img/img-03.png" alt="">
+                    </div>
+                    <div class="top-box">
+                        <div class="play-btn">
+
+                            <img src="assets/images/our-work-img/back-whi.png" alt="">
+                        </div>
+                        <div class="mini">
+                            <img src="assets/images/our-work-img/white-icon (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="our-item-box video-btn" data-toggle="modal"
+                    data-src="https://player.vimeo.com/video/517294790?h=da863dae0d" data-target="#myModal">
+                    <div class="gr-op"></div>
+                    <div class="gradie"></div>
+                    <div class="img-box">
+                        <img src="assets/images/our-work-img/img-02.png" alt="">
+                    </div>
+                    <div class="top-box">
+                        <div class="play-btn">
+
+                            <img src="assets/images/our-work-img/back-whi.png" alt="">
+                        </div>
+                        <div class="mini">
+                            <img src="assets/images/our-work-img/white-icon (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="our-item-box video-btn" data-toggle="modal"
+                    data-src="https://player.vimeo.com/video/493370943?h=3f98cb151a" data-target="#myModal">
+                    <div class="gr-op"></div>
+                    <div class="gradie"></div>
+                    <div class="img-box">
+                        <img src="assets/images/our-work-img/img-03.png" alt="">
+                    </div>
+
+                    <div class="top-box">
+                        <div class="play-btn">
+
+                            <img src="assets/images/our-work-img/back-whi.png" alt="">
+                        </div>
+                        <div class="mini">
+                            <img src="assets/images/our-work-img/white-icon (1).png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="our-item-box video-btn" data-toggle="modal"
+                    data-src="https://player.vimeo.com/video/58385453?badge=0" data-target="#myModal">
+                    <div class="gr-op"></div>
+                    <div class="gradie"></div>
+                    <div class="img-box">
+                        <img src="assets/images/our-work-img/img-01.png" alt="">
+                    </div>
+                    <div class="top-box">
+                        <div class="play-btn">
+
+                            <img src="assets/images/our-work-img/back-whi.png" alt="">
+                        </div>
+                        <div class="mini">
+                            <img src="assets/images/our-work-img/white-icon (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="our-item-box video-btn" data-toggle="modal"
+                    data-src="https://player.vimeo.com/video/517294790?h=da863dae0d" data-target="#myModal">
+                    <div class="gr-op"></div>
+                    <div class="gradie"></div>
+                    <div class="img-box">
+                        <img src="assets/images/our-work-img/img-03.png" alt="">
+                    </div>
+                    <div class="top-box">
+                        <div class="play-btn">
+
+                            <img src="assets/images/our-work-img/back-whi.png" alt="">
+                        </div>
+                        <div class="mini">
+                            <img src="assets/images/our-work-img/white-icon (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="our-item-box video-btn" data-toggle="modal"
+                    data-src="https://player.vimeo.com/video/493370943?h=3f98cb151a" data-target="#myModal">
+                    <div class="gr-op"></div>
+                    <div class="gradie"></div>
+                    <div class="img-box">
+                        <img src="assets/images/our-work-img/img-01.png" alt="">
+                    </div>
+                    <div class="top-box">
+                        <div class="play-btn">
+
+                            <img src="assets/images/our-work-img/back-whi.png" alt="">
+                        </div>
+                        <div class="mini">
+                            <img src="assets/images/our-work-img/white-icon (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="our-item-box video-btn" data-toggle="modal"
+                    data-src="https://player.vimeo.com/video/58385453?badge=0" data-target="#myModal">
+                    <div class="gr-op"></div>
+                    <div class="gradie"></div>
+                    <div class="img-box">
+                        <img src="assets/images/our-work-img/img-02.png" alt="">
+                    </div>
+                    <div class="top-box">
+                        <div class="play-btn">
+
+                            <img src="assets/images/our-work-img/back-whi.png" alt="">
+                        </div>
+                        <div class="mini">
+                            <img src="assets/images/our-work-img/white-icon (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="box-a">
+                <div class="img-box"><a href="#"><img src="assets/images/90x105_logo_toontales 1.png" alt=""></a></div>
+                <div class="address-box">
+                    <p>4th Floor Rectangle No.1, Behind Marriot Hotel Saket,<br> Commercial Complex D4, Saket, New Delhi
+                        - 110017</p>
+                </div>
+            </div>
+            <ul class="box-ba">
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Partner With Us</a></li>
+                <li><a href="#">Work With Us</a></li>
+            </ul>
+            <ul class="box-ba">
+                <li><a href="#">Meet Us</a></li>
+                <li><a href="#">Terms of Use </a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+            <div class="box-c">
+                <ul>
+                    <li><a href="#"><img src="assets/images/insta-icon.png" alt=""></a></li>
+                    <li><a href="#"><img src="assets/images/fb-icon.png" alt=""></a></li>
+                    <li><a href="#"><img src="assets/images/linkedin-icon.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <section class="foot-bottom">
+        <div class="container">
+            <p>ALL RIGHT RESERVED | © 2021 TOON TALES</p>
+            <div class="unzip-box">
+                <span>ACTUALIZED BY </span>
+                <a href="https://unzipgrowth.com/"><img src="assets/images/Unzipgrowth logo_1-02 4.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/migrate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+
+            // Gets the video src from the data-src on each button
+
+            var $videoSrc;
+            $('.video-btn').click(function () {
+                $videoSrc = $(this).data("src");
+            });
+            console.log($videoSrc);
+
+
+
+            // when the modal is opened autoplay it  
+            $('#myModal').on('shown.bs.modal', function (e) {
+
+                // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+                $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+            })
+
+
+
+            // stop playing the youtube video when I close the modal
+            $('#myModal').on('hide.bs.modal', function (e) {
+                // a poor man's stop video
+                $("#video").attr('src', $videoSrc);
+            })
+
+
+
+            jQuery(".video-btn").click(function () {
+                jQuery('#myModal .modal-body iframe').attr('src', '');
+            });
+
+
+            // document ready  
+
+
+
+            $(window).on("load resize", function () {
+                var width = $(document).width();
+
+                if (width > 768) {
+                    $('#our-work-slide').slick('unslick');
+                } else {
+                    $('#our-work-slide').owlCarousel({
+                        loop: true,
+                        margin: 10,
+                        dots: false,
+                        nav: false,
+                        responsive: {
+                            0: {
+                                items: 2
+                            },
+                            600: {
+                                items: 3
+                            },
+                            1000: {
+                                items: 5
+                            }
+                        }
+                    })
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
