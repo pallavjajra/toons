@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Our Work</title>
+    <style>
+        .top-box {
+            position: relative;
+            display: inline-block;
+        }
+
+        .top-box .mini {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .top-box {
+            position: absolute;
+            display: inline-block;
+            top: 50%;
+            left: 50%;
+            z-index: 2;
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes myMove {
+            0% {
+                transform: scale(1);
+            }
+
+            10% {
+                transform: scale(1.2);
+            }
+
+            20% {
+                transform: scale(1);
+            }
+
+            30% {
+                transform: scale(1.2);
+            }
+
+            40% {
+                transform: scale(.9);
+            }
+
+            50% {
+                transform: scale(1);
+            }
+
+            60% {
+                transform: scale(1.2);
+            }
+
+            70% {
+                transform: scale(.8);
+            }
+
+            80% {
+                transform: scale(1);
+            }
+
+            90% {
+                transform: scale(1.2);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .top-box:hover .mini img {
+            animation-name: myMove;
+            animation-iteration-count: infinite;
+            animation-duration: 3000ms;
+            animation-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="wht-gr">
+                <a href="#">
+                    <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M26.927 6.0843C24.2581 3.41535 20.5826 1.76422 16.5113 1.76422C12.44 1.76422 8.76457 3.41535 6.09561 6.0843C3.42666 8.75326 1.77553 12.44 1.77553 16.5C1.77553 20.5713 3.42666 24.2467 6.09561 26.9157C8.76457 29.5846 12.44 31.2358 16.5113 31.2358C20.5826 31.2358 24.2581 29.5846 26.927 26.9157C29.596 24.2467 31.2471 20.5713 31.2471 16.5C31.2358 12.44 29.5846 8.75326 26.927 6.0843ZM16.5 0C21.0576 0 25.1854 1.84339 28.171 4.82899C31.1566 7.8146 33 11.9424 33 16.5C33 21.0576 31.1566 25.1854 28.171 28.171C25.1854 31.1566 21.0576 33 16.5 33C11.9424 33 7.8146 31.1566 4.82899 28.171C1.84339 25.1854 0 21.0576 0 16.5C0 11.9424 1.84339 7.8146 4.82899 4.82899C7.82591 1.84339 11.9424 0 16.5 0Z"
+                            fill="#672C5F"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13.286 14.4681C14.2517 13.2968 14.7345 12.7111 14.7345 12.7111C13.9709 9.76994 13.5891 8.30573 13.5891 8.30573C13.0165 8.03835 12.4775 7.94923 11.961 8.06382C4.6734 12.762 18.339 28.7283 23.5492 22.5786C23.7738 21.4327 23.8636 20.7451 23.8075 20.516C21.528 19.0263 20.3939 18.2751 20.3939 18.2751C19.1924 19.6374 18.586 20.3122 18.586 20.3122C16.4637 19.612 14.7008 17.6767 13.286 14.4681Z"
+                            fill="#672C5F"></path>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.5 29.7891C23.3711 29.7891 29.7891 23.3711 29.7891 15.5C29.7891 11.6734 28.3117 8.08906 25.5992 5.40078C22.9109 2.68828 19.3266 1.21094 15.5 1.21094C7.62891 1.21094 1.21094 7.60469 1.21094 15.5C1.21094 18.0187 1.86484 20.4648 3.12422 22.6445L1.76797 27.6336C1.47734 28.6992 2.44609 29.6922 3.53594 29.4016L8.69453 28.0453C10.7531 29.1836 13.1023 29.7891 15.5 29.7891Z"
+                            fill="white"></path>
+                        <path
+                            d="M26.132 4.89219C23.2984 2.05859 19.5203 0.484375 15.5 0.484375C7.21719 0.484375 0.484375 7.21719 0.484375 15.5C0.484375 18.043 1.11406 20.5375 2.34922 22.7414L1.06563 27.4398C0.847656 28.1906 1.06562 28.9656 1.62266 29.5227C2.17969 30.0797 2.95469 30.2977 3.70547 30.1039L8.59766 28.8203C10.7289 29.9344 13.1023 30.5156 15.5242 30.5156C23.807 30.5156 30.5398 23.7828 30.5398 15.5C30.5156 11.5039 28.9656 7.72578 26.132 4.89219ZM15.5 29.0625C13.2477 29.0625 10.9953 28.4812 9.00938 27.4156C8.9125 27.3672 8.79141 27.3188 8.67031 27.3188C8.59766 27.3188 8.54922 27.3188 8.47656 27.343L3.31797 28.6992C2.95469 28.7961 2.7125 28.6023 2.61563 28.5055C2.51875 28.4086 2.325 28.1664 2.42188 27.8031L3.77813 22.8141C3.82656 22.6203 3.80234 22.4266 3.70547 22.257C2.54297 20.2227 1.9375 17.8734 1.9375 15.5C1.9375 8.01641 8.01641 1.9375 15.5 1.9375C19.1328 1.9375 22.5477 3.34219 25.0906 5.90937C27.6578 8.47656 29.0867 11.8914 29.0625 15.5C29.0625 22.9836 22.9836 29.0625 15.5 29.0625Z"
+                            fill="#15BB53"></path>
+                        <path
+                            d="M22.4992 20.6101C22.2086 21.4335 20.7555 22.2569 20.0773 22.3054C19.4234 22.3538 18.818 22.596 15.7906 21.4093C12.1578 19.9804 9.85703 16.2507 9.6875 16.0085C9.51797 15.7663 8.23438 14.071 8.23438 12.303C8.23438 10.5351 9.15469 9.6874 9.49375 9.32412C9.83281 8.96084 10.1961 8.88818 10.4383 8.88818C10.6805 8.88818 10.9227 8.88818 11.1164 8.88818C11.3828 8.88818 11.6492 8.9124 11.9156 9.49365C12.2305 10.196 12.9328 11.964 13.0055 12.1335C13.1023 12.303 13.1508 12.521 13.0297 12.7632C12.9086 13.0054 12.8602 13.1507 12.6664 13.3687C12.4969 13.5866 12.2789 13.8288 12.1336 13.9983C11.9641 14.1679 11.7703 14.3616 11.9883 14.7249C12.2063 15.0882 12.9086 16.2507 13.9742 17.1952C15.3305 18.4062 16.493 18.7937 16.8562 18.9632C17.2195 19.1327 17.4133 19.1085 17.6313 18.8663C17.8492 18.6241 18.5273 17.8249 18.7695 17.4616C19.0117 17.0983 19.2539 17.171 19.5688 17.2921C19.9078 17.4132 21.6516 18.2851 22.0148 18.4546C22.3781 18.6241 22.6203 18.721 22.693 18.8663C22.7898 19.0601 22.7898 19.7624 22.4992 20.6101Z"
+                            fill="#15BB53"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="logo">
+                <a class="logo-icon-head" href="./home-page.html"><img
+                        src="assets/images/horizontal-logo_toontales-1.png" alt="Logo"></a>
+            </div>
+            <div class="overlay" id="overlay">
+                <nav class="overlay-menu">
+                    <ul>
+                        <div id="overlay-cross">
+
+                        </div>
+                        <li class="logo-menu"><a href="./home-page.html"><img
+                                    src="assets/images/horizontal-logo_toontales-1.png" alt=""></a>
+                            <div class="connn">
+                                <div class="connn-top"></div>
+                                <div class="connn-bottom"></div>
+                            </div>
+                        </li>
+                        <li class="nav-items"><a class="nav-link" href="./our-services.html">Our
+                                Services</a></li>
+                        <li class="nav-items"><a class="nav-link" href="./our-work.html">Our Work</a></li>
+                        <li class="nav-items"><a class="nav-link" href="#">Our Process</a></li>
+                        <li class="nav-items"><a class="nav-link" href="#">Toon Blog</a></li>
+                        <li class="nav-items"><a class="nav-link" href="./our-team.html">Our Team</a></li>
+                        <li class="nav-items"><a class="nav-link" href="./meet-us.html">Meet Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="desktop-whts">
+                <a href="#"><svg width="31" height="31" viewBox="0 0 31 31" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15.5 29.7891C23.3711 29.7891 29.7891 23.3711 29.7891 15.5C29.7891 11.6734 28.3117 8.08906 25.5992 5.40078C22.9109 2.68828 19.3266 1.21094 15.5 1.21094C7.62891 1.21094 1.21094 7.60469 1.21094 15.5C1.21094 18.0187 1.86484 20.4648 3.12422 22.6445L1.76797 27.6336C1.47734 28.6992 2.44609 29.6922 3.53594 29.4016L8.69453 28.0453C10.7531 29.1836 13.1023 29.7891 15.5 29.7891Z"
+                            fill="white"></path>
+                        <path
+                            d="M26.132 4.89219C23.2984 2.05859 19.5203 0.484375 15.5 0.484375C7.21719 0.484375 0.484375 7.21719 0.484375 15.5C0.484375 18.043 1.11406 20.5375 2.34922 22.7414L1.06563 27.4398C0.847656 28.1906 1.06562 28.9656 1.62266 29.5227C2.17969 30.0797 2.95469 30.2977 3.70547 30.1039L8.59766 28.8203C10.7289 29.9344 13.1023 30.5156 15.5242 30.5156C23.807 30.5156 30.5398 23.7828 30.5398 15.5C30.5156 11.5039 28.9656 7.72578 26.132 4.89219ZM15.5 29.0625C13.2477 29.0625 10.9953 28.4812 9.00938 27.4156C8.9125 27.3672 8.79141 27.3188 8.67031 27.3188C8.59766 27.3188 8.54922 27.3188 8.47656 27.343L3.31797 28.6992C2.95469 28.7961 2.7125 28.6023 2.61563 28.5055C2.51875 28.4086 2.325 28.1664 2.42188 27.8031L3.77813 22.8141C3.82656 22.6203 3.80234 22.4266 3.70547 22.257C2.54297 20.2227 1.9375 17.8734 1.9375 15.5C1.9375 8.01641 8.01641 1.9375 15.5 1.9375C19.1328 1.9375 22.5477 3.34219 25.0906 5.90937C27.6578 8.47656 29.0867 11.8914 29.0625 15.5C29.0625 22.9836 22.9836 29.0625 15.5 29.0625Z"
+                            fill="#15BB53"></path>
+                        <path
+                            d="M22.4992 20.6102C22.2086 21.4336 20.7555 22.257 20.0773 22.3055C19.4234 22.3539 18.818 22.5961 15.7906 21.4094C12.1578 19.9805 9.85703 16.2508 9.6875 16.0086C9.51797 15.7664 8.23438 14.0711 8.23438 12.3031C8.23438 10.5352 9.15469 9.6875 9.49375 9.32422C9.83281 8.96094 10.1961 8.88828 10.4383 8.88828C10.6805 8.88828 10.9227 8.88828 11.1164 8.88828C11.3828 8.88828 11.6492 8.9125 11.9156 9.49375C12.2305 10.1961 12.9328 11.9641 13.0055 12.1336C13.1023 12.3031 13.1508 12.5211 13.0297 12.7633C12.9086 13.0055 12.8602 13.1508 12.6664 13.3688C12.4969 13.5867 12.2789 13.8289 12.1336 13.9984C11.9641 14.168 11.7703 14.3617 11.9883 14.725C12.2063 15.0883 12.9086 16.2508 13.9742 17.1953C15.3305 18.4062 16.493 18.7938 16.8562 18.9633C17.2195 19.1328 17.4133 19.1086 17.6313 18.8664C17.8492 18.6242 18.5273 17.825 18.7695 17.4617C19.0117 17.0984 19.2539 17.1711 19.5688 17.2922C19.9078 17.4133 21.6516 18.2852 22.0148 18.4547C22.3781 18.6242 22.6203 18.7211 22.693 18.8664C22.7898 19.0602 22.7898 19.7625 22.4992 20.6102Z"
+                            fill="#15BB53"></path>
+                    </svg></a>
+                <a href="#"><svg width="33" height="33" viewBox="0 0 33 33" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M26.927 6.0843C24.2581 3.41535 20.5826 1.76422 16.5113 1.76422C12.44 1.76422 8.76457 3.41535 6.09561 6.0843C3.42666 8.75326 1.77553 12.44 1.77553 16.5C1.77553 20.5713 3.42666 24.2467 6.09561 26.9157C8.76457 29.5846 12.44 31.2358 16.5113 31.2358C20.5826 31.2358 24.2581 29.5846 26.927 26.9157C29.596 24.2467 31.2471 20.5713 31.2471 16.5C31.2358 12.44 29.5846 8.75326 26.927 6.0843ZM16.5 0C21.0576 0 25.1854 1.84339 28.171 4.82899C31.1566 7.8146 33 11.9424 33 16.5C33 21.0576 31.1566 25.1854 28.171 28.171C25.1854 31.1566 21.0576 33 16.5 33C11.9424 33 7.8146 31.1566 4.82899 28.171C1.84339 25.1854 0 21.0576 0 16.5C0 11.9424 1.84339 7.8146 4.82899 4.82899C7.82591 1.84339 11.9424 0 16.5 0Z"
+                            fill="#672C5F"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M13.286 14.4681C14.2517 13.2968 14.7345 12.7111 14.7345 12.7111C13.9709 9.76994 13.5891 8.30573 13.5891 8.30573C13.0165 8.03835 12.4775 7.94923 11.961 8.06382C4.6734 12.762 18.339 28.7283 23.5492 22.5786C23.7738 21.4327 23.8636 20.7451 23.8075 20.516C21.528 19.0263 20.3939 18.2751 20.3939 18.2751C19.1924 19.6374 18.586 20.3122 18.586 20.3122C16.4637 19.612 14.7008 17.6767 13.286 14.4681Z"
+                            fill="#672C5F"></path>
+                    </svg></a>
+            </div>
+            <div class="button_container" id="toggle">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </div>
+
+        </div>
+    </header>
+    <section class="our-work-banner"></section>
+
+    <section class="our-work-tab-section">
+        <div class="container">
+            <div class="our-tabs">
+                <ul id="our-work-slide" class="owl-carousel owl-theme">
+                    <li class="our-tab-list active" data-filter="all">All</li>
+                    <li class="our-tab-list" data-filter="brand-animation">Brand Animation</li>
+                    <li class="our-tab-list" data-filter="process-animation">Process Animation</li>
+                    <li class="our-tab-list" data-filter="explainer-animation">Explainer Animation</li>
+                    <li class="our-tab-list" data-filter="character-animation">Character Animation</li>
+                    <li class="our-tab-list" data-filter="social-media-animation">Social Media Animation
+                    </li>
+                    <li class="our-tab-list" data-filter="infographic-animation">Infographic Animation</li>
+                </ul>
+            </div>
+            <div class="our-work-items">
+                <div class="our-item-box video-btn" data-toggle="modal"
+                    data-src="https://player.vimeo.com/video/517294790?h=da863dae0d" data-target="#myModal">
+                    <div class="gr-op"></div>
+                    <div class="gradie"></div>
+                    <div class="img-box">
+                        <img src="assets/images/our-work-img/img-01.png" alt="">
+                    </div>
+                    <div class="top-box">
+                        <div class="play-btn">
+
+                            <img src="assets/images/our-work-img/back-whi.png" alt="">
+                        </div>
+                        <div class="mini">
+                            <img src="assets/images/our-work-img/white-icon (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="our-item-box video-btn" data-toggle="modal"
+                    data-src="https://player.vimeo.com/video/493370943?h=3f98cb151a" data-target="#myModal">
+                    <div class="gr-op"></div>
+                    <div class="gradie"></div>
+                    <div class="img-box">
+                        <img src="assets/images/our-work-img/img-02.png" alt="">
+                    </div>
+                    <div class="top-box">
+                        <div class="play-btn">
+
+                            <img src="assets/images/our-work-img/back-whi.png" alt="">
+                        </div>
+                        <div class="mini">
+                            <img src="assets/images/our-work-img/white-icon (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="our-item-box video-btn" data-toggle="modal"
+                    data-src="https://player.vimeo.com/video/58385453?badge=0" data-target="#myModal">
+                    <div class="gr-op"></div>
+                    <div class="gradie"></div>
+                    <div class="img-box">
+                        <img src="assets/images/our-work-img/img-03.png" alt="">
+                    </div>
+                    <div class="top-box">
+                        <div class="play-btn">
+
+                            <img src="assets/images/our-work-img/back-whi.png" alt="">
+                        </div>
+                        <div class="mini">
+                            <img src="assets/images/our-work-img/white-icon (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="our-item-box video-btn" data-toggle="modal"
+                    data-src="https://player.vimeo.com/video/517294790?h=da863dae0d" data-target="#myModal">
+                    <div class="gr-op"></div>
+                    <div class="gradie"></div>
+                    <div class="img-box">
+                        <img src="assets/images/our-work-img/img-02.png" alt="">
+                    </div>
+                    <div class="top-box">
+                        <div class="play-btn">
+
+                            <img src="assets/images/our-work-img/back-whi.png" alt="">
+                        </div>
+                        <div class="mini">
+                            <img src="assets/images/our-work-img/white-icon (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="our-item-box video-btn" data-toggle="modal"
+                    data-src="https://player.vimeo.com/video/493370943?h=3f98cb151a" data-target="#myModal">
+                    <div class="gr-op"></div>
+                    <div class="gradie"></div>
+                    <div class="img-box">
+                        <img src="assets/images/our-work-img/img-03.png" alt="">
+                    </div>
+
+                    <div class="top-box">
+                        <div class="play-btn">
+
+                            <img src="assets/images/our-work-img/back-whi.png" alt="">
+                        </div>
+                        <div class="mini">
+                            <img src="assets/images/our-work-img/white-icon (1).png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="our-item-box video-btn" data-toggle="modal"
+                    data-src="https://player.vimeo.com/video/58385453?badge=0" data-target="#myModal">
+                    <div class="gr-op"></div>
+                    <div class="gradie"></div>
+                    <div class="img-box">
+                        <img src="assets/images/our-work-img/img-01.png" alt="">
+                    </div>
+                    <div class="top-box">
+                        <div class="play-btn">
+
+                            <img src="assets/images/our-work-img/back-whi.png" alt="">
+                        </div>
+                        <div class="mini">
+                            <img src="assets/images/our-work-img/white-icon (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="our-item-box video-btn" data-toggle="modal"
+                    data-src="https://player.vimeo.com/video/517294790?h=da863dae0d" data-target="#myModal">
+                    <div class="gr-op"></div>
+                    <div class="gradie"></div>
+                    <div class="img-box">
+                        <img src="assets/images/our-work-img/img-03.png" alt="">
+                    </div>
+                    <div class="top-box">
+                        <div class="play-btn">
+
+                            <img src="assets/images/our-work-img/back-whi.png" alt="">
+                        </div>
+                        <div class="mini">
+                            <img src="assets/images/our-work-img/white-icon (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="our-item-box video-btn" data-toggle="modal"
+                    data-src="https://player.vimeo.com/video/493370943?h=3f98cb151a" data-target="#myModal">
+                    <div class="gr-op"></div>
+                    <div class="gradie"></div>
+                    <div class="img-box">
+                        <img src="assets/images/our-work-img/img-01.png" alt="">
+                    </div>
+                    <div class="top-box">
+                        <div class="play-btn">
+
+                            <img src="assets/images/our-work-img/back-whi.png" alt="">
+                        </div>
+                        <div class="mini">
+                            <img src="assets/images/our-work-img/white-icon (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="our-item-box video-btn" data-toggle="modal"
+                    data-src="https://player.vimeo.com/video/58385453?badge=0" data-target="#myModal">
+                    <div class="gr-op"></div>
+                    <div class="gradie"></div>
+                    <div class="img-box">
+                        <img src="assets/images/our-work-img/img-02.png" alt="">
+                    </div>
+                    <div class="top-box">
+                        <div class="play-btn">
+
+                            <img src="assets/images/our-work-img/back-whi.png" alt="">
+                        </div>
+                        <div class="mini">
+                            <img src="assets/images/our-work-img/white-icon (1).png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="box-a">
+                <div class="img-box"><a href="#"><img src="assets/images/90x105_logo_toontales 1.png" alt=""></a></div>
+                <div class="address-box">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisici<br>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <ul class="box-ba">
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="./partner-with-us.html">Partner With Us</a></li>
+                <li><a href="./work-with-us.html">Work With Us</a></li>
+            </ul>
+            <ul class="box-ba">
+                <li><a href="./meet-us.html">Meet Us</a></li>
+                <li><a href="./terms-condition.html">Terms of Use </a></li>
+                <li><a href="./privacy-policy.html">Privacy Policy</a></li>
+            </ul>
+            <div class="box-c">
+                <ul>
+                    <li><a href="#"><img src="assets/images/insta-icon.png" alt=""></a></li>
+                    <li><a href="#"><img src="assets/images/fb-icon.png" alt=""></a></li>
+                    <li><a href="#"><img src="assets/images/linkedin-icon.png" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/migrate.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+        integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+
+            // Gets the video src from the data-src on each button
+
+            var $videoSrc;
+            $('.video-btn').click(function () {
+                $videoSrc = $(this).data("src");
+            });
+            console.log($videoSrc);
+
+
+
+            // when the modal is opened autoplay it  
+            $('#myModal').on('shown.bs.modal', function (e) {
+
+                // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+                $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+            })
+
+
+
+            // stop playing the youtube video when I close the modal
+            $('#myModal').on('hide.bs.modal', function (e) {
+                // a poor man's stop video
+                $("#video").attr('src', $videoSrc);
+            })
+
+
+
+            jQuery(".video-btn").click(function () {
+                jQuery('#myModal .modal-body iframe').attr('src', '');
+            });
+
+
+            // document ready  
+
+
+
+            $(window).on("load resize", function () {
+                var width = $(document).width();
+
+                if (width > 768) {
+                    $('#our-work-slide').slick('unslick');
+                } else {
+                    $('#our-work-slide').owlCarousel({
+                        loop: true,
+                        margin: 10,
+                        dots: false,
+                        nav: false,
+                        responsive: {
+                            0: {
+                                items: 2
+                            },
+                            600: {
+                                items: 3
+                            },
+                            1000: {
+                                items: 5
+                            }
+                        }
+                    })
+                }
+            });
+        });
+
+    </script>
+</body>
+
+</html>
